@@ -1,0 +1,236 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     background-color: rgb(247, 248, 250);
+     font-family:"Poppins", serif;
+     color: rgb(135, 150, 163);
+}
+header {
+     width:95%;
+     margin: 0 auto;
+     
+}
+
+a:visited , a:hover, a {
+     color:inherit;
+     text-decoration: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.first {
+     margin-left:0;
+     padding-left:0;
+}
+
+.floatLeft{
+     float:left;
+}
+
+
+nav {
+     width: 100%;
+     margin-top:1.5%;
+     height:100%;   
+}
+
+nav img {
+     width:150%;
+     margin-top:-10px;
+}
+
+nav ul {
+     float:right;
+     position:relative;
+     right:50%;
+}
+
+ul li a {
+     display: block;
+}
+
+nav ul li{
+     position:relative;
+     left:50%;
+     padding-left:50px;
+}
+
+.lastChild {
+     position: absolute;
+     right:2.5%;
+     top:1.5%;
+     height:35px;
+     width:90px;
+     background-color: rgb(48, 70, 89);
+     text-align: center;
+     color:rgb(218, 223, 228);
+     padding-top:9px;
+}
+
+main section {
+     width:450px;
+     margin:150px 150px;
+     float:left;
+}
+
+main img { 
+     float:right;
+     margin-top:80px;
+     width:50%;
+}
+
+.firstSpan {
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 14px;
+     display: block;
+     margin-bottom: 20px;
+}
+
+main h1 {
+     font-weight: 700;
+     font-size:50px;
+     color: rgb(48, 70, 89);
+     margin-bottom:40px;
+}
+
+main section p {
+     font-weight:500;
+     margin-top:25px;
+     line-height: 25px;
+     font-size:18px;
+}
+
+input[type=text] {
+     width: 370px;
+     height: 35px;
+     background-color:rgb(224, 233, 240) ;
+     border:none;
+}
+
+.inlineBlock {
+     display: inline-block;
+}
+
+.lastSpan {
+     background-color:rgb(48, 70, 89);
+     padding:9px 10px;
+     text-align: center;
+     color:rgb(218, 223, 228);    
+}
+
+::placeholder {
+     color:rgb(135, 150, 163);
+     font-weight: 700;
+     padding-left:10px;
+}
+
+.sectionTwo {
+     width: 90%;
+     margin: 50px 10%;
+}
+
+.sectioninTwo {
+     float:left;
+     width:20%;
+     margin:10px;
+     line-height: 20px;
+}
+
+nav div {
+     display:none;
+}
+.sectioninTwo h2{
+     font-weight: 700;
+     color:rgb(48, 70, 89);
+     margin: 10px auto;
+}
+
+.sectioninTwo span {
+     color:rgb(48, 70, 89);
+     font-weight: 500;
+     display: block;
+     margin-top:20px;
+}
+
+@media all and (max-width: 1500px){
+     main img {
+          width: 35%;
+          margin-top:10%;
+     }
+}
+
+@media all and (max-width: 1150px){
+     main img {
+          width: 600px;
+          float:right;
+          margin-left:25%;
+          margin-top:10px;
+     }
+     main section {
+          margin-bottom:50px;
+          margin-left:25%;
+     }
+     .sectioninTwo {
+          width:35%;
+          margin-left:12%;
+     }
+     .sectionTwo {
+          width:100%;
+          margin:0 auto;
+     }
+}
+
+@media all and (max-width: 800px){
+     header ul, header a:last-child {
+          display:none;
+     }
+     header nav {
+          width:100%;
+          margin: 50px 35%;
+     }
+
+     header div {
+          display:block;
+          width:30px;
+          position:absolute;
+          top:50px;
+          left:25px;
+     }
+
+     main section{
+          width:70%;
+          margin-top:30px;
+          margin:0px 25px;
+     }
+
+     .lastSpan {
+          width: 370px;
+          height: 35px;
+          margin-top:10px;
+     }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+

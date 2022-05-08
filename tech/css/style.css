@@ -1,0 +1,107 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+a, a:visited, a:hover {
+     color:inherit;
+     text-decoration: none;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     width: 100%;
+     margin-left:2%;
+     margin-top: 1.5%;
+}
+.float {
+     float:left;
+}
+
+header li {
+     line-height:45px;
+     font-size:25px;
+     color:grey;
+}
+header h3 {
+     line-height:45px;
+     font-size:20px;
+     color:orange;
+     font-weight: bold;
+}
+
+header ul { 
+     margin-top:20px;
+}
+
+header h3+h3 {
+     color:grey;
+     font-weight: bold;
+}
+
+main h1 {
+     font-size:50px;
+     font-weight: bolder;
+     margin-bottom: 20px;
+}
+
+main {
+     width: 700px;
+     margin-left: 50px;
+}
+
+main span{
+     display: block;
+     width:150px;
+     margin-bottom:15px;
+     font-size:18px;
+     color:grey;
+}
+
+.newSection {
+     margin-top: 30px;
+     font-size: 35px;
+     width:400px;
+     font-weight: bold;
+}
+
+.newSection section {
+     border-bottom: 1px solid grey;
+     margin-top: 20px;
+}
+
+.newSection span {
+     font-size:20px;
+     color:grey;
+     display:block;
+     margin-bottom: 10px;
+     margin-top:10px;
+}
+
+.newSection section:first-child{
+     margin-top:0px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

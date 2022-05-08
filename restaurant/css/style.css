@@ -1,0 +1,345 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color:inherit;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: calc(20px + (30 - 20) * ((100vw - 400px) / (800 - 400)));
+}
+body {
+  font-family: "Playfair Display",sans-serif;
+  background-color: rgb(242, 248, 248);
+  
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  margin:0% 6.5% 0% 15%;
+}
+
+/* Nav
+/*******************************************/
+nav {
+  margin-top:-1%;
+}
+nav ul {
+  float:right;
+}
+
+nav ul * {
+  float:left;
+  margin-left: 50px;
+}
+
+nav img {
+  width:30px;
+}
+
+.forthSection img {
+  display:block;
+  margin:0 auto;
+}
+/* Nav
+/*******************************************/
+
+main {
+  width: 45%;
+  margin-left: 8.5%;
+  margin-top:9%;
+}
+
+form {
+  display:inline-block;
+  width:70%;
+  margin-top:3%;
+}
+
+
+input {
+  width: 100%;
+  height: 40px;
+}
+
+main div {
+  margin-top:5%;
+  padding-bottom:20%;
+}
+.firstAnc {
+  float:left;
+  margin-left:5%;
+}
+
+.firstAnc span {
+  display: inline-block;
+  margin-left:-10px;
+}
+
+div :first-child {
+  margin-left:0px;
+}
+
+
+.secondSection div {
+  padding:5% 10% 15% 40%;
+  
+}
+a {
+  display: block;
+}
+
+
+.secondSection div span {
+  display:inline-block;
+}
+
+.secondSection p+p {
+  padding-top:2em;
+}
+
+.secondSection h2 {
+  padding:3% 0 5%;
+}
+
+.secondSection div span {
+  padding:2%;
+  margin-top:10%;
+  margin-bottom:18%;
+}
+
+.thirdSection {
+  width:95%;
+  margin:-100px auto;
+}
+
+.thirdSection h3 {
+  padding-bottom:25px;
+}
+
+.thirdSection ol {
+  width: 70%;
+  margin:5% auto;
+  
+  
+}
+.thirdSection ol li {
+  width: 18%;
+  display:inline-block;
+  padding-bottom: 2%;
+  
+}
+.sectionInThirdSection {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sectionInThirdSection img {
+  margin-left:2%;
+  margin-top:50px;
+  display:inline-block;
+  padding-bottom: 5%;
+}
+.sectionInThirdSection :first-child {
+  margin-left:0px;
+}
+
+.forthSection {
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.forthSection h2 {
+  padding-bottom:50px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header {
+  font-size:0.4rem;
+}
+
+body>div {
+  background: no-repeat url("first_bg.png") ;
+  background-size:cover;
+}
+
+h1 {
+  font-weight:700;
+  font-size: 1.8em;
+  line-height: 110%;
+}
+
+.firstAnc span {
+  font-size: 0.6em;
+}
+
+.secondSection {
+  background: no-repeat url("secondbg.png");
+  background-size: 100%;
+}
+
+.secondSection h3{
+  font-size: 0.5em;
+  font-weight:500;
+  color:rgb(255, 136, 0)
+}
+
+.secondSection h2 {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.secondSection p {
+  font-size:0.4em;
+  line-height: 1.6em;
+}
+
+
+.secondSection div span {
+  background-color:rgb(255, 136, 0);
+  border-radius:0.2em;
+  font-size:0.35em;
+  color:white;
+}
+
+.thirdSection {
+  text-align: center;
+}
+
+.thirdSection h3 {
+  color:rgb(255, 136, 0);
+  font-size: 0.5em;
+  font-weight: 500;
+}
+
+.thirdSection h2 {
+  font-weight: 600;
+  font-size:1.6em;
+}
+
+.thirdSection ol {
+  font-size:0.5em;
+}
+.thirdSection ol li {
+  border-bottom:3px rgb(225, 228, 229) solid;
+}
+
+.thirdSection ol li:hover {
+  color: rgb(255, 136, 0);
+  border-bottom: rgb(255, 136, 0) solid 2px;
+}
+
+.forthSection h3 {
+  color:rgb(255, 136, 0);
+  font-size: 0.5em;
+  font-weight: 500;
+}
+
+.forthSection h2 {
+  font-weight: 600;
+  font-size:1.6em;
+}
+
+.forthSection h4 {
+  color:rgb(255, 136, 0); 
+  font-weight: 600;
+  font-size:1.2em;
+
+}
+
+.fontSize {
+  display:block;
+  padding: 10px 0px;
+}
+
+.firstdiv {
+  float:left;
+
+}
+
+.seconddiv {
+  float:right;
+  margin-right:0px;
+}
+
+section>div {
+  padding-top:100px;
+  width:100%;
+  margin:0 auto;
+  
+}
+
+.forthSection div span {
+  font-size:0.8em;
+}
+
+
+.other{
+  font-size:0.5em;
+}
+
+
+.firstdiv .fontSize, .seconddiv .fontSize {
+  font-size:0.5em;
+  text-align: left;
+}
+
+.lastImage {
+  padding:10% 0;
+}
+
+.forthSection .new {
+  font-size:0.8em;
+  color:black;
+  padding-top:10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.forthSection .newer {
+  display:block;
+  color:grey;
+  font-size:0.4em;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom:30px;
+}
+
+.forthSection p {
+  font-size:0.5em;
+  color:grey;
+  font-style: italic;
+  padding-top:30px;
+  padding-bottom:100px;
+}
